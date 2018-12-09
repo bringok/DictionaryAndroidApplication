@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall5"
+    android:padding="15dp"
+    tools:context="com.rsr.bapon.dictionary.FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView"
+        android:layout_marginTop="20dp"
+        android:descendantFocusability="blocksDescendants"
+        android:scrollbars="vertical"/>
+
+
+</RelativeLayout>
